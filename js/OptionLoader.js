@@ -144,8 +144,8 @@ var adTypeInput_opt = [
 ]
 
 
-populateSelect(selectId, banner_sizes);
-populateSelect(selectId2, group_by_options);
-populateSelect(selectId3, client_index_options);
+
+//populateSelect(selectId2, group_by_options);
 populateSelect(selectId4, date_group_type_opt);
 populateSelect(selectId5,adTypeInput_opt);
+

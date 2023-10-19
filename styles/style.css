@@ -222,6 +222,40 @@ html, body {
     box-shadow: 0 0 16px #eeeef3;
     padding: 20px 17px;
 }
+.main__group_by {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    box-shadow: 0 0 16px #eeeef3;
+    padding: 20px 17px;
+}
+.main__banner_size {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    box-shadow: 0 0 16px #eeeef3;
+    padding: 20px 17px;
+}
+.main__client_index {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #e7e7e7;
+    border-radius: 3px;
+    box-shadow: 0 0 16px #eeeef3;
+    padding: 20px 17px;
+}
 
 .select__item-block {
     display: inline-block;
