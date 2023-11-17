@@ -1,7 +1,7 @@
 $(function () {
     $('select[multiple].active.1col').multiselect({
         columns: 1,
-        placeholder: '...',
+        placeholder: '',
         search: false,
         selectAll: true
     });

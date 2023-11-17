@@ -1,11 +1,11 @@
 // Создаем массив с данными для полей
 var inputData = [
-    { title: "сrid", id: "cridInput", placeholder: "id1, id2..." },
-    { title: "client_id", id: "client_id_input", placeholder: "id1, id2..." },
-    { title: "segment_id", id: "segment_id_input", placeholder: "id1, id2..." },
-    { title: "geo", id: "geo_input", placeholder: "id1, id2..." },
-    { title: "tag_id", id: "tag_id_input", placeholder: "id1, id2..." },
-    { title: "source_id", id: "source_id_input", placeholder: "id1, id2..." }
+    { title: "Crid", id: "cridInput", placeholder: "id1, id2..." },
+    { title: "Client id", id: "client_id_input", placeholder: "id1, id2..." },
+    { title: "Segment id", id: "segment_id_input", placeholder: "id1, id2..." },
+    { title: "Geo", id: "geo_input", placeholder: "id1, id2..." },
+    { title: "Tag id", id: "tag_id_input", placeholder: "id1, id2..." },
+    { title: "Source id", id: "source_id_input", placeholder: "id1, id2..." }
 ];
 
 // Создаем контейнер для вставки

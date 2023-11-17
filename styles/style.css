@@ -191,8 +191,8 @@ html, body {
 
 .main__select-block {
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    text-align: justify;
     margin-top: 10px;
     background-color: white;
     border: 1px solid #e7e7e7;
@@ -241,54 +241,10 @@ html, body {
     border-radius: 5px;
 }
 
-.order-buttons {
-    display: flex;
-    height: 30px;
-    margin-right: 15px;
-}
-
-.order-btn {
-    user-select: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 30px;
-    border: 1px solid #9c9c9c;
-    border-radius: 3px;
-}
-
-.order-btn img {
-    height: 15px;
-    width: 15px;
-}
-
-.order-btn:hover {
-    box-shadow: 0 0 10px #7cb8e9;
-    transition: 0.2s;
-}
-
-.order-btn:active {
-    border: 2px solid #7cb8e9;
-    transition: 0.2s;
-}
-
-#orderByAsc {
-    margin-right: 10px;
-}
-
-#orderByDesc {
-    border: 2px solid #7cb8e9;
-}
-
 .link {
     user-select: none;
     display: flex;
     align-items: center;
-    /* border: 1px solid #e2e7ff; */
-    /* border-radius: 5px; */
-    /* box-shadow: 0 0 10px #d1d1d1; */
 }
 
 .link-title {
@@ -319,8 +275,6 @@ html, body {
 
 .link-btn:hover img {
     scale: 1.05;
-    /* width: 21px;
-    height: 21px; */
     transition: 0.2s;
 }
 
