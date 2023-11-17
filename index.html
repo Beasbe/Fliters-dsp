@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Выбор периода статистики, формата и типа объявления</title>
-    <link
-      rel="stylesheet"
-      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
-    />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+       <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" rel="stylesheet" />
+    <link href="styles/jquery.multiselect.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/jquery.multiselect.js"></script>
     <link rel="stylesheet" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/adaptive.css">
@@ -19,140 +19,125 @@
 
 </head>
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <div class="container">
-                <nav class="header__nav">
-                    <div class="header__datepicker">
-                        <div class="datepicker__btn" id="day">day</div>
-                        <div class="datepicker__btn" id="week">week</div>
-                        <div class="datepicker__btn" id="month">month</div>
-                        <div class="datepicker__btn" id="custom-btn">custom</div>
-                    </div>
-                </nav>
-            </div>
-        </header>
-
-        <main class="main">
-            <div class="container">
-                <div class="main__input">
-
-                    <div class="main__datepicker-inputs">
-                        <div class="datapicker__input">
-                            <div class="datapicker__input-title">дата начала</div>
-                            <input class="input__item" type="text" id="datepicker1" placeholder="Выбрать">
-                        </div>
-                        <div class="datapicker__input">
-                            <div class="datapicker__input-title">дата окончания</div>
-                            <input class="input__item" type="text" id="datepicker2" placeholder="Выбрать">
-                        </div>
-                    </div>
-                    <div class="main__banner_size">
-
-
-
-                    </div>
-                    <div class="main__client_index">
-
-
-
-                    </div>
-
-            <div class="main__input-block">
-
-                <div class="select__item-block">
-                    <div class="select__item-title">
-                        Date_group_type
-                    </div>
-                    <select name="" id="date_group_type">
-
-
-                    </select>
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <div class="header__datepicker">
+                    <div class="datepicker__btn" id="day">day</div>
+                    <div class="datepicker__btn" id="week">week</div>
+                    <div class="datepicker__btn" id="month">month</div>
+                    <div class="datepicker__btn" id="custom-btn">custom</div>
                 </div>
-                <div class="select__item-block">
-                    <div class="select__item-title">
-                        Ad_type
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__input">
+                <div class="main__datepicker-inputs">
+                    <div class="datepicker__input">
+                        <div class="datepicker__input-title">Start Date</div>
+                        <input class="input__item" type="text" id="datepicker1" placeholder="Select">
                     </div>
-                    <select name="" id="adTypeInput">
-
-
-                    </select>
+                    <div class="datepicker__input">
+                        <div class="datepicker__input-title">End Date</div>
+                        <input class="input__item" type="text" id="datepicker2" placeholder="Select">
+                    </div>
                 </div>
-            </div>
 
-                    <div class="main__select-block">
-                        <div class="" style="display: flex; align-items: center;">
-                            <!-- <div class="order-buttons">
-                                <div class="order-btn" id="orderByAsc" tabindex="0">
-                                    <img src="img/up.png" alt="">
-                                </div>
-                                <div class="order-btn" id="orderByDesc" tabindex="0">
-                                    <img src="img/down.png" alt="">
-                                </div>
-                            </div> -->
-
-                        <!--    <div class="select__item-block">
-                                <div class="select__item-title">
-                                    Group_by
-                                </div>
-                                <select name="" id="format_group_by">
-
-
-                                </select>
-                            </div>-->
-    
-                            <div class="select__item-block">
-                                <div class="select__item-title">
-                                    Формат
-                                </div>
-                                <select name="" id="formatSelect">
-                                    <option value="html">HTML</option>
-                                    <option value="json">JSON</option>
-                                    <option value="csv">CSV</option>
-                                </select>
-                            </div>
+                <div class="main__input-block">
+                    <div class="select__item-block">
+                        <div class="select__item-title">
+                            Date Group Type
                         </div>
+                        <select name="" id="date_group_type" >
 
-                       
-                        <div class="link">
-                            <div class="link-title">Ссылка-запрос API:</div>
-                            <a id="apiLink" href="#" target="_blank">
-                                <div class="link-btn" title="Ссылка-запрос">
-                                    <img src="img/link.png" alt="">
-                                </div>
-                            </a>
-                        </div>
-
-                        
+                        </select>
                     </div>
-                    <!-- <div class="main__link">
+                    <!--<div class="select__item-block">
+                        <div class="select__item-title" >
+                            Client Index
+                        </div>
+                        <select name="" id="client_index" >
+                            &lt;!&ndash; Add options here &ndash;&gt;
+                        </select>
+                    </div>-->
+                    <div class="select__item-block">
+                        <div class="select__item-title">
+                            Client Index
+                        </div>
+                        <select name="basic[]" multiple="multiple" class="1col active" id="client_index">
+
+                        </select>
+                    </div>
+                    <div class="select__item-block">
+                        <div class="select__item-title">
+                            Banner Size
+                        </div>
+                        <select name="basic[]" multiple="multiple" class="1col active" id="banner_size">
+
+                        </select>
+                    </div>
+                    <div class="select__item-block">
+                        <div class="select__item-title">
+                            Ad Type
+                        </div>
+                        <select name="basic[]" multiple="multiple" class="1col active" id="adTypeInput">
+
+                        </select>
+                    </div>
+                </div>
+
+                <div class="main__select-block">
+                    <div style="display: flex; align-items: center;">
                         <div class="select__item-block">
                             <div class="select__item-title">
-                                api link
+                                Group By
                             </div>
-                        <input class="input__item" type="text" id="apiLinkInput" placeholder="Ввести">
+                            <select name="basic[]" multiple="multiple" class="1col active" id="group_by">
+
+                            </select>
                         </div>
-                    </div> -->
-                    <div class="main__order_by">
-                        
+                        <div class="select__item-block">
+                            <div class="select__item-title">
+                                Order By
+                            </div>
+                            <select name="basic[]" multiple="multiple" class="1col active" id="order_by">
 
+                            </select>
 
+                        <div class="select__item-block">
+                            <div class="select__item-title">
+                                Format
+                            </div>
+                            <select name="" id="formatSelect">
+                                <option value="html">HTML</option>
+                                <option value="json">JSON</option>
+                                <option value="csv">CSV</option>
+                            </select>
+                        </div>
                     </div>
-                    <div class="main__group_by">
 
-
-
+                    <div class="link">
+                        <div class="link-title">API Query Link:</div>
+                        <a id="apiLink" href="#" target="_blank">
+                            <div class="link-btn" title="API Link">
+                                <img src="img/link.png" alt="">
+                            </div>
+                        </a>
                     </div>
-
-
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </main>
+</div>
 
     <script src="js/OptionLoader.js"></script>
     <script src="js/InputsLoader.js"></script>
     <script src="js/datepicker.js"></script>
+    <script src="js/multiple_Select.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

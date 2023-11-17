@@ -16,9 +16,9 @@ function populateSelect(selectId, options) {
 }
 
 
-var selectId = "banner_size_input";
+
 var banner_sizes = [
-    { value: "", text: " " },
+
     { value: "240x400", text: "240x400" },
     { value: "970x250", text: "970x250" },
     { value: "336x280", text: "336x280" },
@@ -29,7 +29,7 @@ var banner_sizes = [
   
 ];
 var group_by_options = [
-    { value: "", text: "" },
+
     { value: "date", text: "Date" },
     { value: "ctr", text: "CTR" },
     { value: "bidfloor", text: "Bid Floor" },
@@ -59,9 +59,9 @@ var group_by_options = [
     { value: "bid_requests_count", text: "Bid Requests Count" }
 ];
 
-var selectId2 = "format_group_by";
+
 var order_by_options = [
-    { value: "", text: "" },
+
     { value: "date", text: "Date" },
     { value: "ctr", text: "CTR" },
     { value: "bidfloor", text: "Bid Floor" },
@@ -117,9 +117,8 @@ var order_by_options = [
     { value: "-auction_participation_count", text: "-Auction Participation Count" },
     { value: "-bid_requests_count", text: "-Bid Requests Count" }
 ];
-var selectId3 = "client_index_input";
+
 var client_index_options = [
-    { value: "", text: "" },
     { value: "през", text: "през" },
     { value: "нег", text: "нег" },
     { value: "мат", text: "мат" },
@@ -128,24 +127,27 @@ var client_index_options = [
 
 
 ];
-var selectId4 = "date_group_type";
+
 var date_group_type_opt = [
-    { value: "", text: "" },
+
     { value: "day", text: "day" },
     { value: "week", text: "week" },
     { value: "month", text: "month" }
 
 
 ];
-var selectId5 = "adTypeInput";
+
 var adTypeInput_opt = [
-    { value: "", text: "" },
+
     { value: "amb", text: "amb" },
 ]
 
 
 
-//populateSelect(selectId2, group_by_options);
-populateSelect(selectId4, date_group_type_opt);
-populateSelect(selectId5,adTypeInput_opt);
+populateSelect("order_by", order_by_options);
+populateSelect("date_group_type", date_group_type_opt);
+populateSelect("adTypeInput",adTypeInput_opt);
+populateSelect("banner_size",banner_sizes);
+populateSelect("client_index",client_index_options);
+populateSelect("group_by",group_by_options);
 
